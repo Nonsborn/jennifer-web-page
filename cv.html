@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Jennifer Rodriguez</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center; /* Centramos todo el contenido */
+            padding: 20px;
+            background-color: #fdecc5; /* Color de fondo */
+            color: #000; /* Color del texto */
+        }
+        .nav-button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #96a74b; /* Color de fondo de los botones */
+            border: none;
+            border-radius: 5px;
+            color: #fff; /* Color del texto de los botones */
+        }
+        .cv-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff; /* Fondo del CV */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left; /* Alineamos el contenido del CV a la izquierda */
+        }
+        h1 {
+            color: #96a74b; /* Color del nombre */
+            margin-bottom: 5px; /* Espacio debajo del nombre */
+        }
+        .subtitle {
+            font-size: 18px;
+            color: #666; /* Color del subtítulo */
+            margin-bottom: 20px; /* Espacio debajo del subtítulo */
+        }
+        h2 {
+            color: #96a74b; /* Color de los títulos */
+        }
+        .section {
+            margin-bottom: 10px; /* Reducimos el margen inferior */
+            page-break-inside: avoid; /* Evita que las secciones se corten en el PDF */
+        }
+        .section h2 {
+            border-bottom: 2px solid #96a74b;
+            padding-bottom: 5px;
+            margin-bottom: 10px; /* Reducimos el margen inferior de los títulos */
+        }
+        .section p {
+            margin: 5px 0; /* Reducimos el margen de los párrafos */
+        }
+        .download-button {
+            background-color: #96a74b;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Nombre y subtítulo -->
+    <h1>Jennifer Rodriguez</h1>
+    <div class="subtitle">Curriculum</div>
+
+    <!-- Contenedor del CV -->
+    <div class="cv-container">
+        <!-- Summary -->
+        <div class="section">
+            <h2>Summary</h2>
+            <p>
+                10th-semester Computer Engineering student with a strong interest in IT administration and development. 
+                Skilled in adapting to various environments, teamwork, and learning new skills.
+            </p>
+        </div>
+
+        <!-- Personal Data -->
+        <div class="section">
+            <h2>Personal Data</h2>
+            <p><strong>Name:</strong> Jennifer Rodriguez</p>
+            <p><strong>Email:</strong> jenni_fer2510@hotmail.com</p>
+            <p><strong>Phone:</strong> +52 55 2082 9298</p>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <h2>Education</h2>
+            <p><strong>Computer Engineering</strong></p>
+            <p>UNAM, Faculty of Engineering | 2018 - Present, Mexico City</p>
+        </div>
+
+        <!-- Trainings / Certifications -->
+        <div class="section">
+            <h2>Trainings / Certifications</h2>
+            <p><strong>Basic Cybersecurity</strong></p>
+            <p>Cyber Hat | 2024 - 2024, Mexico City</p>
+            <p><strong>Microsoft Security, Compliance, and Identity Fundamentals</strong></p>
+            <p>Womcy LATAM | 2023 - 2024, Mexico City</p>
+        </div>
+
+        <!-- Professional Experience / Projects -->
+        <div class="section">
+            <h2>Professional Experience / Projects</h2>
+            <p><strong>Computer Engineering Intern</strong></p>
+            <p>UNAM, Faculty of Engineering | 2022 - 2023, Mexico City</p>
+        </div>
+
+        <!-- Languages -->
+        <div class="section">
+            <h2>Languages</h2>
+            <p><strong>Spanish:</strong> Native</p>
+            <p><strong>English:</strong> Intermediate</p>
+            <p><strong>German:</strong> Basic</p>
+        </div>
+
+        <!-- Programming Languages -->
+        <div class="section">
+            <h2>Programming Languages</h2>
+            <p>Python, SQL, Linux, C++, Java, C, HTML</p>
+        </div>
+
+        <!-- Botón para descargar el CV en PDF -->
+        <button class="download-button" onclick="downloadCV()">Download CV as PDF</button>
+    </div>
+		
+		<!-- Botones de navegación -->
+		<button class="nav-button" onclick="window.location.href='index.html'">Home Page</button>
+		<button class="nav-button" onclick="window.location.href='personal-info.html'">Personal Information</button>
+		<button class="nav-button" onclick="window.location.href='personal-schedule.html'">Personal Schedule</button>
+		
+    <!-- Script para descargar el CV en PDF -->
+    <script>
+        function downloadCV() {
+            const element = document.querySelector('.cv-container');
+            const opt = {
+                margin: 10,
+                filename: 'CV_Jennifer_Rodriguez.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2, useCORS: true },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+                pagebreak: { mode: 'css', avoid: '.section' } // Evita cortar secciones
+            };
+            html2pdf().from(element).set(opt).save();
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</body>
+</html>
