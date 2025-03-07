@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Schedule</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #c092ff; /* Color de fondo */
+            color: #000; /* Color del texto */
+        }
+        .nav-button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #ffa5ff; /* Color de fondo de los botones */
+            border: none;
+            border-radius: 5px;
+            color: #000; /* Color del texto de los botones */
+        }
+        table {
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff; /* Fondo de la tabla */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            background-color: #ffa5ff; /* Color de fondo de los encabezados */
+            color: #000; /* Color del texto de los encabezados */
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9; /* Color de fondo de las filas pares */
+        }
+        tr:hover {
+            background-color: #f1f1f1; /* Color de fondo al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <h1>Personal Schedule</h1>
+
+    <!-- Tabla de horario -->
+    <table>
+        <thead>
+            <tr>
+                <th>HORA</th>
+                <th>LUNES</th>
+                <th>MARTES</th>
+                <th>MIÉRCOLES</th>
+                <th>JUEVES</th>
+                <th>VIERNES</th>
+                <th>SÁBADO</th>
+                <th>DOMINGO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>06:00</td>
+                <td>GYM</td>
+                <td>GYM</td>
+				<td>GYM</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                
+            </tr>
+            <tr>
+                <td>07:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                
+            </tr>
+            <tr>
+                <td>08:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                
+            </tr>
+            <tr>
+                <td>09:00</td>
+               <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>TRABAJO IIJ</td>
+                <td>TRABAJO IIJ</td>
+                <td>GYM</td>
+                <td>GYM</td>
+            </tr>
+            <tr>
+                <td>11:00</td>
+                <td>ADM.CENTROS TI B106</td>
+                <td>LAB DE REDES Q208</td>
+                <td>ADM.CENTROS TI B106</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>12:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>13:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>14:00</td>
+                <td>SEGURIDAD AVANZ. (EN LINEA)</td>
+                <td>SEGURIDAD AVANZ. (EN LINEA)</td>
+                <td>SEGURIDAD AVANZ. (EN LINEA)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>15:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>16:00</td>
+                <td>ADM. SERV. INTER. B205</td>
+                <td>TRABAJO IIJ</td>
+                <td>ADM. SERV. INTER. B205</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>17:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>18:00</td>
+                <td>REDES DE DATOS B408 (EN LINEA)</td>
+                <td>REDES DE DATOS B408</td>
+                <td></td>
+                <td>REDES DE DATOS B408 (EN LINEA)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>19:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>20:00</td>
+                <td>ADM. PRO. TICS A302</td>
+                <td></td>
+                <td>ADM. PRO. TICS A302</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+	
+	<!-- Botones de navegación -->
+    <button class="nav-button" onclick="window.location.href='index.html'">Home Page</button>
+    <button class="nav-button" onclick="window.location.href='personal-info.html'">Personal Information</button>
+    <button class="nav-button" onclick="window.location.href='cv.html'">CV</button>
+</body>
+</html>
