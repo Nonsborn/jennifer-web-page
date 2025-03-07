@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #33259c; /* Color de fondo */
+            color: #fff; /* Color del texto */
+        }
+        .nav-button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #FFC300; /* Color de fondo de los botones */
+            border: none;
+            border-radius: 5px;
+            color: #000; /* Color del texto de los botones */
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .section {
+            background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            max-width: 800px;
+            text-align: left;
+        }
+        .section h2 {
+            color: #FFC300; /* Color del título de las secciones */
+        }
+    </style>
+</head>
+<body>
+    <h1>Personal Information</h1>
+
+    <!-- Foto y nombre -->
+    <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-picture">
+    <h2>Jennifer Rodriguez</h2> <!-- nombre -->
+
+    <!-- Sección "Who you are" -->
+    <div class="section">
+        <h2>Who You Are</h2>
+        <p>
+            Write a brief description about yourself here. Include your background, values, and what makes you unique.
+        </p>
+    </div>
+
+    <!-- Sección "What do you like" -->
+    <div class="section">
+        <h2>What Do You Like</h2>
+        <p>
+            Describe your interests, passions, and the things you enjoy doing. This could include hobbies, favorite activities, or anything that excites you.
+        </p>
+    </div>
+
+    <!-- Sección "Hobbies" -->
+    <div class="section">
+        <h2>Hobbies</h2>
+        <p>
+            Share your hobbies here. Whether it's reading, sports, traveling, or something else, let people know what you love to do in your free time.
+        </p>
+    </div>
+	
+	<!-- Botones de navegación -->
+    <button class="nav-button" onclick="window.location.href='index.html'">Home Page</button>
+    <button class="nav-button" onclick="window.location.href='personal-schedule.html'">Personal Schedule</button>
+    <button class="nav-button" onclick="window.location.href='cv.html'">CV</button>
+</body>
+</html>
